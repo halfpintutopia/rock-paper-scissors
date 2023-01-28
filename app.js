@@ -12,17 +12,5 @@ choices.forEach(choice => choice.addEventListener('click',  (e) => {
 
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * choices.length);
-    console.log(randomNumber)
-
-    if (randomNumber === 0) {
-        computerChoice.innerHTML = choices[randomNumber].id;
-    }
-
-     if (randomNumber === 1) {
-        computerChoice.innerHTML = choices[randomNumber].id;
-    }
-
-      if (randomNumber === 2) {
-        computerChoice.innerHTML = choices[randomNumber].id;
-    }
+    computerChoice.innerHTML = choices[randomNumber].id;
 }
